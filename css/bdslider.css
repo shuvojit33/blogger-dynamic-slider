@@ -1,0 +1,127 @@
+/**
+     *  jQuery BloggerDynamicSlider v1.0.0
+     *  Copyright 2016 http://shuvojitdas.com
+     *  Contributing Author: Shuvojit Das
+     *  
+     */
+    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+    @import url("flexslider.css");
+    /* Preloader */
+    
+    .flexslider.loading:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(https://lh3.googleusercontent.com/-WWve06d4dB4/Vq28tN4LMUI/AAAAAAAAFcM/k8IQajpDnS4/h120/loader.gif) no-repeat center center;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+    }
+    
+    .flexslider.loading ul.flex-direction-nav,
+    .flexslider.loading ol,
+    .loading .flex-caption {
+        display: none;
+    }
+    
+    .flexslider {
+        border: 1px solid #cacaca;
+        padding: 4px;
+        margin: 0 auto 60px auto;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    
+    .flexslider a {
+        text-decoration: none;
+    }
+    /* Caption/Post Title */
+    
+    .flex-caption {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 10px;
+        height: 60px;
+        background: #FFFFFF;
+        color: #1C1C1C;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 26px;
+        margin: 0;
+    }
+    
+    .flex-caption span {
+        display: table-cell;
+        vertical-align: middle;
+        height: 60px;
+    }
+    
+    .flex-caption.overlayDark,
+    .flex-caption.overlayLight {
+        margin-bottom: -60px;
+        bottom: 60px;
+        position: relative;
+    }
+    
+    .flex-caption.overlayDark {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+    
+    .flex-caption.overlayLight {
+        background: rgba(255, 255, 239, 0.9);
+        color: #000;
+    }
+    
+    ul.slides li a {
+        display: block;
+        overflow: hidden;
+    }
+    /* blogger css conflicts fix */
+    
+    .flexslider ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: initial !important;
+    }
+    
+    .flexslider ul.flex-direction-nav li {
+        margin: 0;
+        padding: 0;
+        line-height: initial;
+    }
+    
+    .flexslider ul li {
+        margin-bottom: 0 !important;
+    }
+    
+    .flexslider img {
+        padding: 0;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    ul.flex-direction-nav {
+        position: static;
+    }
+    
+    ul.flex-direction-nav li {
+        position: static;
+    }
+    
+    @media (max-width: 600px) {
+        .flex-caption {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }

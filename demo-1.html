@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Blogger Dynamic Slider - DEMO 1 | DIMPost</title>
+    <meta name="description" content="Blogger Dynamic Slider Plugin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/demo-css.css" rel="stylesheet" type="text/css">
+    <!--  BloggerDynamicSlider Required Scripts & CSS-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bdslider.css">
+    <script type="text/javascript" src="js/jquery.bdslider.min.js"></script>
+</head>
+
+<body>
+    <div class="fluid_container">
+        <h2>Blogger Dynamic Slider - DEMO</h2>
+        <h1>DEMO 1: Default Slider</h1>
+        <h4>Please resize browser window to see responsiveness / fluidness </h4>
+        <div class="btn" style="text-align: center">
+            <a class="active" href="demo-1.html">Demo 1</a>
+            <a href="demo-2.html">Demo 2</a>
+            <a href="demo-3.html">Demo 3</a>
+        </div>
+        <br />
+    </div>
+    <!-- .fluid_container -->
+    <div id="slider1"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#slider1").BloggerDynamicSlider({
+            blogURL: "http://labelpost.blogspot.com/", // Your Blog URL. example: "http://imagesliderforblogger.blogspot.com"
+        });
+    });
+    </script>
+    <br/>
+    <div id="code-section">
+        <h3>Installation Code</h3>
+        <pre class="highlight line-numbers"><code class="language-markup">&lt;div id=&quot;slider1&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function() {
+    $(&quot;#slider1&quot;).BloggerDynamicSlider({
+        blogURL: &quot;http://labelpost.blogspot.com/&quot;, // Your Blog URL. example: &quot;http://imagesliderforblogger.blogspot.com&quot;
+    });
+});
+&lt;/script&gt;</code></pre>
+    </div>
+    <div id="footer"></div>
+    <!--Load prismJS-->
+    <link href="css/prism-1.5.css" rel="stylesheet" type="text/css">
+    <script src="js/prism.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
